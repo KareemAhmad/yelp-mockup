@@ -1,0 +1,267 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+#backgroundImage {
+  background-image: url(https://s3-media4.fl.yelpcdn.com/bphoto/twxkOQun4YqPlZtWPwDqCA/ls.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 700px;
+}
+
+header {
+  height: 100px;
+  clear: both;
+}
+
+li{
+  width: 7%;
+  height: 70px;
+  margin: 0 5% 0 0;
+  float: left;
+  align-content: center;
+  color: white;
+}
+
+#navigate1 > li + li + li {
+  margin: 0 40% 0 0;
+}
+
+#navigate2 > li {
+  margin: 0 5% 0 0;
+}
+
+#navigate2 > li + li {
+  border: 1px solid black;
+  height: 40px;
+}
+
+#yelpLogo {
+  margin: 100px 40% 0 40%;
+}
+
+#search {
+  margin: 10px 0 0 40%;
+}
+
+#navigate3 {
+  margin-left: 35%;
+}
+
+#photoCredit {
+  display: block;
+  margin: 200px 0 0 50%;
+  width:10%;
+}
+
+#photoTakenBy {
+  height: 30px;
+  width: 30px;
+}
+
+h6 {
+  color: white;
+}
+
+section {
+  height: 600px;
+  border: 1px solid black;
+}
+
+header + section {
+  border-style: hidden;
+}
+
+header a, header + section a {
+  text-decoration: none;
+  color: white;
+}
+
+#locations {
+  margin-left: 13%;
+}
+#locations li {
+  color: black;
+  width: 10%;
+  margin-right: 2%;
+}
+
+h1 + nav + div {
+  border: 1px solid black;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 40px;
+}
+
+div + h2 {
+  margin: 15px 18% 0 18%;
+}
+
+#hotBusinesses {
+  padding-left: 17%;
+}
+
+#hotBusinesses div {
+  height: 300px;
+  width: 25%;
+  border: 1px solid black;
+  display: inline-block;
+  margin-right: 2%;
+}
+
+#business1, #business2, #business3 {
+  height: 150px;
+  width: 100%;
+}
+
+p + h6 {
+  color: orange;
+  margin-top: 1px;
+}
+
+h4 {
+  text-align: center;
+  color: blue;
+}
+
+#reviewStars {
+  height: 10px;
+  width: 40%;
+  margin: 0 2% 0 2%;
+}
+
+p {
+  margin-top: 5px;
+}
+
+h5 {
+  text-align: center;
+}
+
+footer {
+  border: 1px solid black;
+  height: 300px;
+  clear: both;
+  background: lightgrey;
+}
+
+footer li {
+  border: 1px solid black;
+  width: 20%;
+  height:100px;
+  margin-top: 10px;
+  color: black;
+  background: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+h1, h2 {
+  text-align: center;
+  color: red;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 0;
+}
+
+#restaurants, #shopping, #nightLife, #activeLife, #beautySpas, #automotive, #homeServices, #moreCategories {
+  height: 70px;
+  width: 35%;
+  display: block;
+  margin-left: 30%;
+}
+
+
+
+
+@media (min-width: 300px) and (max-width: 800px) {
+  /*section {
+    float: none;
+    width: 100%;
+  }*/
+
+  div + section {
+    display: none;
+    ]
+  }
+
+  li {
+    display: none;
+  }
+
+  li:last-of-type {
+    display: block;
+    float: right;
+  }
+}
